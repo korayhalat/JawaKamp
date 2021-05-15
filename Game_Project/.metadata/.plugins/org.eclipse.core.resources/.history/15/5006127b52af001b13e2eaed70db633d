@@ -1,0 +1,23 @@
+import java.time.LocalDate;
+
+import Adapters.MernisServiceAdapter;
+import Concrete.UserManager;
+import Entities.User;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		UserManager userManager = new UserManager(new MernisServiceAdapter());
+		User user = new User();
+		user.setId(1);
+		user.setFirstName("Koray");
+		user.setLastName("Halat");
+		user.setEmail("koray@koray.com");
+		user.setIdentityNumber("123456");
+		user.setBirthOfDate(LocalDate.of(1979,11,26));
+		userManager.add(user);
+		
+	}
+
+}
