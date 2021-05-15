@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\HP\Coffee_Project\.metadata\.plugins\org.eclipse.jdt.core
+2516806882.index
+868997889.index
+3086096682.index
+901313365.index
+3288993544.index
+2813647450.index

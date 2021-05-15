@@ -1,0 +1,26 @@
+package Concrete;
+
+import Abstract.BaseCustomerManager;
+import Abstract.CustomerCheckService;
+import Entities.Customer;
+
+public class StarbukcsCustomerManager extends BaseCustomerManager {
+	
+	public CustomerCheckService customerCheckService;
+
+	@Override
+	public void Save(Customer customer) {
+		
+	
+	
+	if(customerCheckService.checkIfRealCustomer(customer)) {
+		System.out.println("Starbucks data base e kaydedildi :  "+ customer.getFirstName() + " " + customer.getLastName());
+	}else {
+		System.out.println("Ýþlem Baþarýsýz");
+	}
+	
+	
+	
+	}
+
+}

@@ -1,0 +1,8 @@
+package Abstract;
+
+import Entities.Customer;
+
+public abstract class BaseCustomerService implements CustomerService {
+
+	public abstract void save(Customer customer);
+}
