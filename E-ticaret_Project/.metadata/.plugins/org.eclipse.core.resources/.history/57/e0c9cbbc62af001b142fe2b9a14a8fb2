@@ -1,0 +1,19 @@
+package business.concrete;
+
+import java.util.regex.Pattern;
+
+import business.abstracts.UserValidationService;
+import entities.concretes.User;
+
+public class UserValidationManager implements UserValidationService  {
+
+	private static final Pattern EMAIL_REGEX = Pattern.compile("^[A-Z0-9._%+-]+.(.[A-Z]{2}$)");
+	
+	@Override
+	public boolean validate(User user) {
+		boolean result = ValidationRules.run(passwordControl(user.getPassword()).emailControl(user.getEmail()),
+				firstNameControl(user.getFirstName(),lastNameControl(user.getLastName())));
+		return false;
+	}
+
+}

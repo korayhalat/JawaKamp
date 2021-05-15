@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\HP\E-ticaret_Project\.metadata\.plugins\org.eclipse.jdt.core
+370407191.index
+1000280715.index

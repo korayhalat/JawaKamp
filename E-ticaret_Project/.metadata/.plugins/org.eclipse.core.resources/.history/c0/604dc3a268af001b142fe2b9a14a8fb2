@@ -1,0 +1,16 @@
+import entities.concretes.User;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		User user = new User();
+		user.setId(1);
+		user.setFirstName("Koray");
+		user.setLastName("Halat");
+		user.setEmail("koray@koray.com");
+		user.setPassword("987654321");
+
+	}
+
+}

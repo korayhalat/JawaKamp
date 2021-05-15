@@ -1,0 +1,6 @@
+package business.concrete;
+
+public class VerificationManager implements VerificationService {
+
+	
+}

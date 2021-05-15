@@ -1,0 +1,11 @@
+package googleAccount;
+
+public class GoogleAccountManager {
+
+	public void register(int id,String firstName,String lastName,String email,Sring password) {
+		System.out.println("Kaydýnýz Baþarýyla Gerçekleþti");
+	}
+	public void loggin(String email,String password) {
+		System.out.println("Kayýt Ýþlemi Gerçekleþmedi");
+	}
+}

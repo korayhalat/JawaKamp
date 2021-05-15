@@ -1,0 +1,5 @@
+package business.concrete;
+
+public class UserValidationManager {
+
+}
